@@ -4,7 +4,7 @@ const initialState = {
   setMessage = '',
 };
 export const sendMessage = createSlice({
-      name:'sendMge',
+      name:'sendmsg',
       initialState,
       reducers:{ 
         reset: (state) =>{
