@@ -1,19 +1,37 @@
 import React from 'react';
+// import { createSlice } from '@reduxjs/toolkit';
+// const initialState = {
+//   setMessage = '',
+// };
+// export const sendMessage = createSlice({
+//       name:'sendmsg',
+//       initialState,
+//       reducers:{
+//         reset:(state) =>{
+//            state.setMessage = '';
+//         },
+//         enterByUser: (state, action) => {
+//            state.setMessage = action.payload;
+//         },
+//       },
+// });
+// export const { reset, enterByUser } = sendMessage.actions;
+// export default sendMessage.reducer;
 import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
-  setMessage = '',
+  setMessage: '',
 };
 export const sendMessage = createSlice({
-      name:'sendmsg',
-      initialState,
-      reducers:{ 
-        reset:(state) =>{
-           state.setMessage = '';
-        },
-        enterByUser: (state, action) => {
-           state.setMessage = action.payload;
-        },            
-      },
+  name: 'counter',
+  initialState,
+  reducers: {
+    reset: (state) => {
+      state.setMessage = '';
+    },
+    enterByUser: (state, action) => {
+      state.setMessage = action.payload;
+    },
+  },
 });
-export const { reset, enterByUser } = sendMessage.actions;
-export default sendMessage.reducer;
+export const { reset, enterByUser } = setMessage.actions;
+export default setMessage.reducer;
