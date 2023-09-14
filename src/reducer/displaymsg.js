@@ -33,5 +33,5 @@ export const sendMessage = createSlice({
     },
   },
 });
-export const { reset, enterByUser } = setMessage.actions;
-export default setMessage.reducer;
+export const { reset, enterByUser } = sendMessage.actions;
+export default sendMessage.reducer;
