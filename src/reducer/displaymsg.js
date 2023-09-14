@@ -7,10 +7,10 @@ export const sendMessage = createSlice({
       name:'sendmsg',
       initialState,
       reducers:{ 
-        reset: (state) =>{
+        reset=(state) =>{
            state.setMessage = '';
         },
-        enterByUser : (state, action) => {
+        enterByUser =(state, action) => {
            state.setMessage = action.payload;
         },            
       },
