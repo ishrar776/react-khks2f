@@ -3,6 +3,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import sendMessage from '../reducer/counterName';
 export const store = configureStore({
   reducer: {
-    sendMge: sendMessage,
+    sendmsg: sendMessage,
   },
 });
