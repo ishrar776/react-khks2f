@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { reset, enterByUser } from '../reducer/counterName';
+import { reset, enterByUser } from '../reducer/displayuser';
 const DemoCounter = () => {
   const [firstName, SetFirstName] = useState('');
   const displayMessage = useSelector((item) => item.sendmsg.setMessage);
