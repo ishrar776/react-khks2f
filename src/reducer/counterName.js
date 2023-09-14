@@ -10,10 +10,10 @@ export const sendMessage = createSlice({
         reset: (state) =>{
            state.setMessage = '';
         },
-        sendDoc : (state, action) => {
+        enterByUser : (state, action) => {
            state.setMessage = action.payload;
         },            
       },
 });
-export const { reset, sendDoc } = sendMessage.actions;
+export const { reset, enterByUser } = sendMessage.actions;
 export default sendMessage.reducer;
